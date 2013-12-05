@@ -1,3 +1,30 @@
+body {
+  background-image:url("/assets/yellow-table-cloth.jpg");
+  font-family: 'Architects Daughter', cursive;
+  margin: 0%;
+  top: 0%;
+
+}
+
+#top-banner {
+  margin-top: 0px;
+  background-color: white;
+  opacity: .9;
+/*  border: 2px solid blue;
+*/
+}
+
+#top-banner h1 {
+  margin: 0px auto;
+  padding: 30px;
+  color: red;
+
+}
+
+.center-justified {
+  text-align: center;
+  margin-top: 50%;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -11,3 +38,4 @@
  *= require_self
  *= require_tree .
  */
+
