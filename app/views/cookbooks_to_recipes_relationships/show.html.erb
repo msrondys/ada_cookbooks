@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cookbook:</strong>
+  <%= @cookbooks_to_recipes_relationship.cookbook_id %>
+</p>
+
+<p>
+  <strong>Recipe:</strong>
+  <%= @cookbooks_to_recipes_relationship.recipe_id %>
+</p>
+
+<%= link_to 'Edit', edit_cookbooks_to_recipes_relationship_path(@cookbooks_to_recipes_relationship) %> |
+<%= link_to 'Back', cookbooks_to_recipes_relationships_path %>

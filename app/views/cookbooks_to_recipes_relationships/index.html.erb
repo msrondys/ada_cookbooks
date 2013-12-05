@@ -1,0 +1,29 @@
+<h1>Listing cookbooks_to_recipes_relationships</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cookbook</th>
+      <th>Recipe</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cookbooks_to_recipes_relationships.each do |cookbooks_to_recipes_relationship| %>
+      <tr>
+        <td><%= cookbooks_to_recipes_relationship.cookbook_id %></td>
+        <td><%= cookbooks_to_recipes_relationship.recipe_id %></td>
+        <td><%= link_to 'Show', cookbooks_to_recipes_relationship %></td>
+        <td><%= link_to 'Edit', edit_cookbooks_to_recipes_relationship_path(cookbooks_to_recipes_relationship) %></td>
+        <td><%= link_to 'Destroy', cookbooks_to_recipes_relationship, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cookbooks to recipes relationship', new_cookbooks_to_recipes_relationship_path %>

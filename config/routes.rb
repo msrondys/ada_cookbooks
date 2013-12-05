@@ -1,7 +1,14 @@
 AdaCookbooks::Application.routes.draw do
+  get "home/index"
+  resources :cookbooks_to_recipes_relationships
+
+  resources :cookbooks
+
   resources :ingredients
 
   resources :recipes
+
+  root "home#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

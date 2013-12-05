@@ -1,0 +1,25 @@
+<%= form_for(@cookbooks_to_recipes_relationship) do |f| %>
+  <% if @cookbooks_to_recipes_relationship.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cookbooks_to_recipes_relationship.errors.count, "error") %> prohibited this cookbooks_to_recipes_relationship from being saved:</h2>
+
+      <ul>
+      <% @cookbooks_to_recipes_relationship.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cookbook_id %><br>
+    <%= f.number_field :cookbook_id %>
+  </div>
+  <div class="field">
+    <%= f.label :recipe_id %><br>
+    <%= f.number_field :recipe_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
