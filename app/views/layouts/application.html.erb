@@ -9,14 +9,23 @@
 </head>
 <body>
   <div id="top-banner">
-    <h1 class="center-justified">Awesome Cookbook!</h1>
+    <h1 class="center-justified"><a href="/">Awesome Cookbook!</a></h1>
 
   </div>
 
+  <div class="post-it">
+    <a href="/cookbooks"> Cookbook</a>
+    <br>
+    <a href="/ingredients"> Ingredients</a><br>
+    <a href="/recipes"> Recipes</a> 
+  </div>
+
+<div id="contents">
 <%= yield %>
-  
-  <div class="footer">
-    <a href= >
+</div> 
+
+  <div class="footer"> 
+    <a href="/">Home</a>
   </div>
 </body>
 </html>
