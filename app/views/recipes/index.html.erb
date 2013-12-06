@@ -1,32 +1,37 @@
 <h2>Listing recipes</h2>
 
-<table>
-  <thead>
-    <tr>
-      <th class="visible-header">Name</th>
-      <th class="visible-header">Description</th>
-      <th class="visible-header">Process</th>
-      <th class="visible-header">Vegetarian</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+<ul class="list">
+  <li>
+    <table>
+      <thead>
+        <tr>
+          <th class="visible-header">Name</th>
+          <th class="visible-header">Description</th>
+          <th class="visible-header">Process</th>
+          <th class="visible-header">Vegetarian</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
 
-  <tbody>
-    <% @recipes.each do |recipe| %>
-      <tr>
-        <td><%= recipe.name %></td>
-        <td><%= recipe.description %></td>
-        <td><%= recipe.process %></td>
-        <td><%= recipe.vegetarian %></td>
-        <td><%= link_to 'Show', recipe %></td>
-        <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
-        <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      <tbody>
+        <% @recipes.each do |recipe| %>
+          <li><tr>
+            <td><%= recipe.name %></td>
+            <td><%= recipe.description %></td>
+            <td><%= recipe.process %></td>
+            <td><%= recipe.vegetarian %></td>
+            <td><%= link_to 'Show', recipe %></td>
+            <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
+            <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr></li>
+        <% end %>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
 
 <br>
 
