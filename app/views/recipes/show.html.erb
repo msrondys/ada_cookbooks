@@ -27,5 +27,12 @@
   <% end %>
 </p>
 
+<p>
+  <strong>Supplies:</strong><br>
+  <% @recipe.supplies.each do |supply| %>
+    <%= supply.name %><br>
+  <% end %>
+</p>
+
 <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
 <%= link_to 'Back', recipes_path %>

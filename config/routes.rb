@@ -1,4 +1,6 @@
 AdaCookbooks::Application.routes.draw do
+  resources :supplies
+
   get "home/index"
   resources :cookbooks_to_recipes_relationships
 
