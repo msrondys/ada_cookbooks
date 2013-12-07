@@ -7,6 +7,12 @@
         <tr>
           <th class="visible-header">Name</th>
           <th class="visible-header">Vegetarian</th>
+          <th class="visible-header">Nuts</th>
+          <th class="visible-header">Dairy</th>
+          <th class="visible-header">Gluten</th>
+          <th class="visible-header">Soy</th>
+          <th class="visible-header">Corn</th>
+          <th class="visible-header">Seafood</th>
           <th></th>
           <th></th>
           <th></th>
@@ -18,6 +24,12 @@
           <tr>
             <td><%= ingredient.name %></td>
             <td><%= ingredient.vegetarian %></td>
+            <td><%= ingredient.nuts %></td>
+            <td><%= ingredient.dairy %></td>
+            <td><%= ingredient.gluten %></td>
+            <td><%= ingredient.soy %></td>
+            <td><%= ingredient.corn %></td>
+            <td><%= ingredient.seafood %></td>
             <td><%= link_to 'Show', ingredient %></td>
             <td><%= link_to 'Edit', edit_ingredient_path(ingredient) %></td>
             <td><%= link_to 'Destroy', ingredient, method: :delete, data: { confirm: 'Are you sure?' } %></td>
